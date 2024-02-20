@@ -2,3 +2,12 @@ h1{
     font-family: "Press Start 2P", system-ui;
     font-size: 2em;
 }
+
+#encryptor_output{
+display: inline;
+}
+
+img{
+    width: 500px;
+    height: auto;
+}
