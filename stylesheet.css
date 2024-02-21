@@ -1,23 +1,35 @@
 body {
     background-color: #E9ECF8;
+    min-height: 100vh;
 }
 
+header{
+    background-color: #356EA9;
+    width: 100%;
+}
 #title {
     font-family: "Press Start 2P", system-ui;
     font-size: 2em;
     color: white;
-    background-color: #356EA9;
-    padding: 2rem ;
+    padding: 2rem;
 }
 
-.encryptor_container{
-    display: flex;
-    gap: 5rem;
-    margin-top: 15%;
+.encryptor_container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30%;
 }
 
-.encryptor_input{
-    width: 70%;
+.encryptor_input {
+    display:flex;
+    flex-direction:column;
+}
+
+.encryptor_output {
+    
+}
+
+#output_buttoms{
 }
 
 footer {
@@ -29,5 +41,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-align:center;
+    text-align: center;
 }
