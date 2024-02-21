@@ -17,18 +17,23 @@
 <body>
 
     <header>
-        <h1>Encriptador de texto</h1>
+        <h1 id="title">Encriptador de texto</h1>
     </header>
-    
-    <textarea name="" id="input_text_box" cols="100" rows="25"></textarea>
 
-    <div class="action button container">
+    <div class="encryptor_box">
+
+        <textarea name="text" id="input_text_box" cols="50" rows="15">Escribe el texto a encriptar aquí</textarea>
         <button onclick="" class="container__boton" id="ecnriptar">Encriptar</button>
         <button onclick="" class="container__boton" id="desencriptar">Desencriptar</button>
+
     </div>
 
-    <output id="encryptor_output"><img src="img/textNotFound.png" alt="texto no encontrado"></output>
-    <button onclick="">Copiar</button>
+
+    <div class="encryptor_output">
+        <output><textarea name="output" id="output_text" cols="50"
+                rows="15">No se ha encontrado ningun texto</textarea></output>
+        <button onclick="" id="copy_button">Copiar</button>
+    </div>
 
     <footer>
         <p>Desarrollado por Rodolfo Ramírez Gómez - Proyecto Encriptador de texto AluraLatam 2024</p>

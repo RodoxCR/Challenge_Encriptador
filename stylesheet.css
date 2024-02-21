@@ -1,13 +1,25 @@
-h1{
+body {
+    background-color: #E9ECF8;
+}
+
+#title {
     font-family: "Press Start 2P", system-ui;
     font-size: 2em;
+    color: white;
+    background-color: #356EA9;
+    padding: 2rem ;
 }
 
-#encryptor_output{
-display: inline;
-}
 
-img{
-    width: 500px;
-    height: auto;
+
+footer {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1 rem;
+    background-color: #356EA9;
+    color: white;
+    padding: 2rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
 }
