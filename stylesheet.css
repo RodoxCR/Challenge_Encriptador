@@ -38,6 +38,7 @@ header {
 .container_buttons {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .encryptor_output {
@@ -51,7 +52,8 @@ header {
 }
 
 #output_button {
-    align-items: center;
+    margin-top: 20px;
+    
 }
 
 footer {
