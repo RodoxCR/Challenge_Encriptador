@@ -9,33 +9,49 @@ header {
     color: white;
     padding: 2rem;
     width: 100%;
-    position:fixed;
+    /* position: fixed; */
 }
 
-#title{
+#title {
     margin-left: 6rem;
 }
 
 .encryptor_container {
+    
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8rem;
+    margin-top: 2rem;
 }
-
 
 .encryptor_input {
     display: flex;
     flex-direction: column;
-    margin: 8rem ;
 }
 
-.container_butoms {
+#input_textarea {
+    resize: none;
+    font-size: 28px;
+}
+
+.container_buttons {
     display: flex;
     flex-direction: row;
-
 }
 
-.encryptor_output{
-    margin: 8rem 0;
+.encryptor_output {
+    display: flex;
+    flex-direction: column;
+}
 
+#output_textarea {
+    resize: none;
+    font-size: 28px;
+}
+
+#output_button {
+    align-items: center;
 }
 
 footer {
