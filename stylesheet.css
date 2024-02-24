@@ -33,27 +33,42 @@ header {
 #input_textarea {
     resize: none;
     font-size: 28px;
+    border-radius: 8px;
 }
 
 .container_buttons {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    gap: 24px;
 }
 
 .encryptor_output {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
+
 
 #output_textarea {
     resize: none;
     font-size: 28px;
+    width:400px;
+    height:500px;  
+    background-image: url('img/textNotFound.png'); /* Ruta de la imagen de fondo */ 
+    background-size: contain; /* Ajusta la imagen para cubrir todo el área del textarea */
+    background-position: bottom; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 30px; /* Añade algo de espacio entre el contenido y los bordes del textarea */ 
+    border-radius: 8px;
 }
 
 #output_button {
     margin-top: 20px;
-    
+    border-radius: 8px;
 }
 
 footer {
