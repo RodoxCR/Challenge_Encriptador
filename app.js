@@ -14,3 +14,22 @@ hidenBackgroundImage();
 
 // Escuchar el evento input para mostrar u ocultar la imagen de fondo
 textarea.addEventListener('input', hidenBackgroundImage);
+
+
+function applyTextareaAnimation(textareaAnimation) {
+    textareaAnimation.addEventListener('click', function () {
+        textareaAnimation.classList.add('shake'); // Agrega la clase 'shake' al hacer clic en el textarea
+
+        // Remueve la clase 'shake' después de 0.5 segundos para que la animación se detenga y el textarea vuelva a su estado original
+        setTimeout(function () {
+            textareaAnimation.classList.remove('shake');
+        }, 500); // 500 milisegundos (0.5 segundos)
+    });
+}
+
+let inputTexarea = document.getElementById('input_textarea');
+let outputTexarea = document.getElementById('output_textarea');
+applyTextareaAnimation(inputTexarea);
+applyTextareaAnimation(outputTexarea);
+
+
