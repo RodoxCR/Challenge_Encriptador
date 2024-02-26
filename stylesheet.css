@@ -1,11 +1,11 @@
 body {
     background-color: #e4e6eb;
-    height: 100vh; 
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 header {
     display: flex;
+    justify-content:flex-start;
     align-items: center;
     background-image: linear-gradient(to bottom, #0A3871, #356EA9);
     color: white;
@@ -16,26 +16,26 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
 #title {
-    text-align: left;
+    
     font-family: "Press Start 2P", system-ui;
     font-size: 2em;
+    
 }
-
-.encryptor_container {
+#logo{
+    margin-left: 12rem;
+}
+main{
+    
     display: flex;
-    justify-content: space-between;
-    padding: 0 16rem;
-    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
 .encryptor_input {
     display: flex;
     flex-direction: column;
-    margin-top: 8rem;
-    align-items: center;
-    height: 100vh;
 }
 
 #input_textarea {
@@ -84,6 +84,7 @@ header {
 .encryptor_output {
     display: flex;
     flex-direction: column;
+    margin-top: 2.4rem;
 }
 
 #output_textarea {
