@@ -1,7 +1,7 @@
 body {
     background-color: #e4e6eb;
-    height: 100vh; /* Establece la altura al 100% del viewport */
-    overflow: hidden; /* Oculta el desbordamiento del contenido */
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 header {
@@ -17,8 +17,6 @@ header {
 }
 
 
-
-
 #title {
     text-align: left;
     font-family: "Press Start 2P", system-ui;
@@ -30,7 +28,6 @@ header {
     justify-content: space-between;
     padding: 0 16rem;
     margin-top: 2rem;
-    
 }
 
 .encryptor_input {
