@@ -1,6 +1,6 @@
 
 // Función para mostrar u ocultar la imagen de fondo del textarea
-function hidenBackgroundImage() {
+function hiddenBackgroundImage() {
     let textarea = document.getElementById('output_textarea');
 
     if (textarea.value.trim() === '') {
@@ -9,8 +9,8 @@ function hidenBackgroundImage() {
         textarea.style.backgroundImage = 'none'; // Oculta la imagen de fondo
     }
 }
-hidenBackgroundImage();
-document.getElementById('output_textarea').addEventListener('input', hidenBackgroundImage);
+hiddenBackgroundImage();
+document.getElementById('output_textarea').addEventListener('input', hiddenBackgroundImage);
 
 function applyTextareaAnimation(textareaAnimation) {
     textareaAnimation.addEventListener('click', function () {
@@ -26,21 +26,12 @@ applyTextareaAnimation(outputTexarea);
 
 function validateText() {
     let texto = document.getElementById('input_textarea').value;
-    let regex = /^[a-z\s]*$/; 
+    let regex = /^[a-z\s]*$/;
     let errorMessage = document.getElementById('error_message');
     if (!regex.test(texto)) {
         errorMessage.style.display = 'inline-flex';
         return;
     }
-
-    document.getElementById('input_textarea').addEventListener('input', function() {
-        // Ocultar el mensaje de error cuando el usuario comienza a escribir de nuevo o corrija el texto
-        errorMessage.style.display = 'none';
-    });
 }
-
-
-
-
 
 
