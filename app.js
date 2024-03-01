@@ -31,11 +31,6 @@ function validateText() {
         alert("El mensaje debe contener letras minúsculas, sin caracteres especiales y sin acento.");
         return;
     }
-
-    // Si pasa la validación, aquí puedes ejecutar la lógica para encriptar o desencriptar el texto
-    // Por ejemplo:
-    // encriptarTexto(texto);
-    // desencriptarTexto(texto);
 }
 
 

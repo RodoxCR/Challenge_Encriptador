@@ -1,6 +1,7 @@
 body {
     background-color: #e4e6eb;
     overflow: hidden;
+    height: 100vh;
 }
 
 header {
@@ -23,6 +24,7 @@ header {
 
 #logo {
     margin-left: 35rem;
+    filter: drop-shadow(2px 2px 4px  rgba(0, 0, 0, 0.5));
 }
 
 main {
@@ -30,7 +32,6 @@ main {
     justify-content: center; 
     align-items: center;
     vertical-align: middle; 
-    min-height: 85vh;
     gap: 4rem;
 }
 
@@ -55,8 +56,8 @@ main {
 }
 
 .container_buttons {
-    display: inline-flex;
-    margin-top: 4rem;
+    display:flex;
+    margin-top: 1rem;
     justify-content: center;
     gap: 4rem;
 }
@@ -82,7 +83,7 @@ main {
     transform: scale(1.1);
 }
 
-.warning_message {
+.information_message {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,9 +91,9 @@ main {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     color: #495057;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
-.warning_message img{
+.information_message img{
     display: flex;
     align-items: center;
 }
@@ -195,4 +196,21 @@ footer {
     text-align: center;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media (min-width: 768px) { 
+
+    #output_textarea {
+        width: 24rem;
+        height: 32rem;
+        margin-top: 1.4rem;
+        font-size: 2rem;
+    }
+
+    #logo {
+        margin-left: 14.2rem;
+    }
+
 }
