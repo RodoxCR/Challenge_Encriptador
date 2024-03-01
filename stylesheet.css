@@ -1,7 +1,7 @@
 body {
     background-color: #e4e6eb;
     overflow: hidden;
-    height: 100vh;
+
 }
 
 header {
@@ -24,15 +24,16 @@ header {
 
 #logo {
     margin-left: 35rem;
-    filter: drop-shadow(2px 2px 4px  rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 main {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    vertical-align: middle; 
+    vertical-align: middle;
     gap: 4rem;
+    height: 85vh;
 }
 
 .encryptor_input {
@@ -56,7 +57,7 @@ main {
 }
 
 .container_buttons {
-    display:flex;
+    display: flex;
     margin-top: 1rem;
     justify-content: center;
     gap: 4rem;
@@ -93,9 +94,15 @@ main {
     color: #495057;
     margin-top: 1rem;
 }
-.information_message img{
+
+.information_message img {
     display: flex;
     align-items: center;
+}
+
+#error_message{
+    color: red;
+    display: none;
 }
 
 .encryptor_output {
@@ -200,7 +207,11 @@ footer {
 
 
 
-@media (min-width: 768px) { 
+@media (min-width:1440px){
+
+    main {
+        height: 75vh;
+    }
 
     #output_textarea {
         width: 24rem;

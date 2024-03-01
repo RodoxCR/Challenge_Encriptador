@@ -25,13 +25,22 @@ applyTextareaAnimation(inputTexarea);
 applyTextareaAnimation(outputTexarea);
 
 function validateText() {
-    let texto = document.getElementById("input_textarea").value;
-    let regex = /^[a-z]+$/; // Expresión regular para letras minúsculas sin acento
+    let texto = document.getElementById('input_textarea').value;
+    let regex = /^[a-z\s]*$/; 
+    let errorMessage = document.getElementById('error_message');
     if (!regex.test(texto)) {
-        alert("El mensaje debe contener letras minúsculas, sin caracteres especiales y sin acento.");
+        errorMessage.style.display = 'inline-flex';
         return;
     }
+
+    document.getElementById('input_textarea').addEventListener('input', function() {
+        // Ocultar el mensaje de error cuando el usuario comienza a escribir de nuevo o corrija el texto
+        errorMessage.style.display = 'none';
+    });
 }
+
+
+
 
 
 
