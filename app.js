@@ -29,33 +29,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Agregamos el evento de escucha al textarea
     document.getElementById('input_textarea').addEventListener('input', function () {
-        let texto = this.value;
+        let inputText = this.value;
         let regex = /^[a-z\s]*$/; // Expresión regular para letras minúsculas y espacios en blanco
 
-        if (!regex.test(texto)) {
+        if (!regex.test(inputText)) {
             errorMessage.style.display = 'inline-flex';
-           
+            document.getElementById('encriptar').setAttribute('disabled', 'true');
+            document.getElementById('desencriptar').setAttribute('disabled', 'true');
+
 
         } else {
             errorMessage.style.display = 'none';
+            document.getElementById('encriptar').removeAttribute('disabled');
+            document.getElementById('desencriptar').removeAttribute('disabled');
+
         }
     });
 });
 
 function encripytorText(text) {
-    
+
     let textareaContent = document.getElementById('input_textarea');
 
     if (textareaContent.value === undefined || textareaContent.value === null) {
         // Si es así, asignar una cadena vacía a texto
         text = '';
-    
+
     } else {
         // Si no, asignar el valor de textarea.value a texto
         text = textareaContent.value;
     }
-    
-    
+
+
     // Objeto con los valores de reemplazo para las vocales
     const replacements = { 'e': 'enter', 'i': 'imes', 'a': 'ai', 'o': 'ober', 'u': 'ufat' };
 
@@ -73,12 +78,12 @@ function encripytorText(text) {
 
     // Unir los caracteres en una cadena nuevamente
     let encryptorMessage = characters.join('');
-    
+
     // Devolver la cadena transformada
-    return encryptorMessage ;
+    return encryptorMessage;
 }
 
-document.getElementById('encriptar').addEventListener('click', function() {
+document.getElementById('encriptar').addEventListener('click', function () {
     // Llamar a la función transformText cuando se haga clic en el botón
     let textoTransformado = encripytorText();
     console.log(textoTransformado); // Resultado: H1l2 m3nd4
