@@ -24,14 +24,65 @@ let outputTexarea = document.getElementById('output_textarea');
 applyTextareaAnimation(inputTexarea);
 applyTextareaAnimation(outputTexarea);
 
-function validateText() {
-    let texto = document.getElementById('input_textarea').value;
-    let regex = /^[a-z\s]*$/;
+document.addEventListener('DOMContentLoaded', function () {
     let errorMessage = document.getElementById('error_message');
-    if (!regex.test(texto)) {
-        errorMessage.style.display = 'inline-flex';
-        return;
+
+    // Agregamos el evento de escucha al textarea
+    document.getElementById('input_textarea').addEventListener('input', function () {
+        let texto = this.value;
+        let regex = /^[a-z\s]*$/; // Expresión regular para letras minúsculas y espacios en blanco
+
+        if (!regex.test(texto)) {
+            errorMessage.style.display = 'inline-flex';
+           
+
+        } else {
+            errorMessage.style.display = 'none';
+        }
+    });
+});
+
+function encripytorText(text) {
+    
+    let textareaContent = document.getElementById('input_textarea');
+
+    if (textareaContent.value === undefined || textareaContent.value === null) {
+        // Si es así, asignar una cadena vacía a texto
+        text = '';
+    
+    } else {
+        // Si no, asignar el valor de textarea.value a texto
+        text = textareaContent.value;
     }
+    
+    
+    // Objeto con los valores de reemplazo para las vocales
+    const replacements = { 'e': 'enter', 'i': 'imes', 'a': 'ai', 'o': 'ober', 'u': 'ufat' };
+
+    // Separar la cadena en caracteres incluyendo los espacios
+    let characters = text.split('');
+
+    // Iterar sobre cada caracter
+    for (let i = 0; i < characters.length; i++) {
+        // Verificar si el caracter es una vocal
+        if ('aeiou'.includes(characters[i])) {
+            // Reemplazar la vocal por el valor correspondiente en el objeto de reemplazos
+            characters[i] = replacements[characters[i]] || characters[i];
+        }
+    }
+
+    // Unir los caracteres en una cadena nuevamente
+    let encryptorMessage = characters.join('');
+    
+    // Devolver la cadena transformada
+    return encryptorMessage ;
 }
+
+document.getElementById('encriptar').addEventListener('click', function() {
+    // Llamar a la función transformText cuando se haga clic en el botón
+    let textoTransformado = encripytorText();
+    console.log(textoTransformado); // Resultado: H1l2 m3nd4
+});
+
 
 
