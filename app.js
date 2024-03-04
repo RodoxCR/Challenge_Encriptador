@@ -1,7 +1,7 @@
 
 // Función para mostrar u ocultar la imagen de fondo del textarea
 function hiddenBackgroundImage() {
-    let textarea = document.getElementById('output_textarea');
+    let textarea = document.getElementById('output-textarea');
 
     if (textarea.value.trim() === '') {
         textarea.style.backgroundImage = "url('img/textNotFound.png')"; // Muestra la imagen de fondo
@@ -10,7 +10,7 @@ function hiddenBackgroundImage() {
     }
 }
 hiddenBackgroundImage();
-document.getElementById('output_textarea').addEventListener('input', hiddenBackgroundImage);
+document.getElementById('output-textarea').addEventListener('input', hiddenBackgroundImage);
 
 function applyTextareaAnimation(textareaAnimation) {
     textareaAnimation.addEventListener('click', function () {
@@ -19,16 +19,16 @@ function applyTextareaAnimation(textareaAnimation) {
     });
 }
 
-let inputTexarea = document.getElementById('input_textarea');
-let outputTexarea = document.getElementById('output_textarea');
+let inputTexarea = document.getElementById('input-textarea');
+let outputTexarea = document.getElementById('output-textarea');
 applyTextareaAnimation(inputTexarea);
 applyTextareaAnimation(outputTexarea);
 
 document.addEventListener('DOMContentLoaded', function () {
-    let errorMessage = document.getElementById('error_message');
+    let errorMessage = document.getElementById('error-message');
 
     // Agregamos el evento de escucha al textarea
-    document.getElementById('input_textarea').addEventListener('input', function () {
+    document.getElementById('input-textarea').addEventListener('input', function () {
         let inputText = this.value;
         let regex = /^[a-z\s]*$/; // Expresión regular para letras minúsculas y espacios en blanco
 
@@ -47,47 +47,47 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function encripytorText(text) {
+function encryptText() {
+    let text = document.getElementById('input-textarea').value;
+    let textConverted = text
+    .replace(/e/gi, "enter")
+    .replace(/i/gi, "imes")
+    .replace(/a/gi, "ai")
+    .replace(/o/gi, "ober")
+    .replace(/u/gi, "ufat");
 
-    let textareaContent = document.getElementById('input_textarea');
-
-    if (textareaContent.value === undefined || textareaContent.value === null) {
-        // Si es así, asignar una cadena vacía a texto
-        text = '';
-
-    } else {
-        // Si no, asignar el valor de textarea.value a texto
-        text = textareaContent.value;
+    if(text.length != 0){
+        document.getElementById('output-textarea').value = textConverted;
     }
 
-
-    // Objeto con los valores de reemplazo para las vocales
-    const replacements = { 'e': 'enter', 'i': 'imes', 'a': 'ai', 'o': 'ober', 'u': 'ufat' };
-
-    // Separar la cadena en caracteres incluyendo los espacios
-    let characters = text.split('');
-
-    // Iterar sobre cada caracter
-    for (let i = 0; i < characters.length; i++) {
-        // Verificar si el caracter es una vocal
-        if ('aeiou'.includes(characters[i])) {
-            // Reemplazar la vocal por el valor correspondiente en el objeto de reemplazos
-            characters[i] = replacements[characters[i]] || characters[i];
-        }
-    }
-
-    // Unir los caracteres en una cadena nuevamente
-    let encryptorMessage = characters.join('');
-
-    // Devolver la cadena transformada
-    return encryptorMessage;
+  document.getElementById('output-textarea').addEventListener('input', hiddenBackgroundImage());
 }
 
-document.getElementById('encriptar').addEventListener('click', function () {
-    // Llamar a la función transformText cuando se haga clic en el botón
-    let textoTransformado = encripytorText();
-    console.log(textoTransformado); // Resultado: H1l2 m3nd4
-});
+function decryptText() {
+    let text = document.getElementById('input-textarea').value;
+    let textConverted = text
+    .replace(/enter/gi,"e")
+    .replace(/imes/gi,"i")
+    .replace(/ai/gi,"a")
+    .replace(/ober/gi,"o")
+    .replace(/ufat/gi,"u");
+
+    if(text.length != 0){
+        document.getElementById('output-textarea').value = textConverted;
+    }
+
+  document.getElementById('output-textarea').addEventListener('input', hiddenBackgroundImage());
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

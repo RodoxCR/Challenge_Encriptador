@@ -34,14 +34,15 @@ main {
     vertical-align: middle;
     gap: 4rem;
     height: 85vh;
+    width: 100vw;
 }
 
-.encryptor_input {
+.encryption-input {
     display: flex;
     flex-direction: column;
 }
 
-#input_textarea {
+#input-textarea {
     font-size: 2rem;
     border-radius: 8px;
     width: 34rem;
@@ -56,14 +57,19 @@ main {
     font-family: "Roboto", sans-serif;
 }
 
-.container_buttons {
+#input-textarea::placeholder{
+    color: #0A3871;
+    font-family: "Roboto", sans-serif;
+}
+
+.container-buttons {
     display: flex;
     margin-top: 1rem;
     justify-content: center;
     gap: 4rem;
 }
 
-.container_buttons button {
+.container-buttons button {
     background-color: #356EA9;
     color: white;
     border: none;
@@ -79,13 +85,23 @@ main {
     text-align: center;
 }
 
-.container_buttons button:hover {
+.container-buttons #desencriptar{
+    background-color: #ADB5BD;
+}
+
+.container-buttons #desencriptar:hover{
+    background-color: #495057;
+}
+
+
+.container-buttons button:hover {
     background-color: #0A3871;
     transform: scale(1.1);
 }
 
-.information_message {
+.information-messages{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
@@ -95,22 +111,22 @@ main {
     margin-top: 1rem;
 }
 
-.information_message img {
+.information-messages span {
     display: flex;
     align-items: center;
 }
 
-#error_message{
+#error-message{
     color: red;
     display: none;
 }
 
-.encryptor_output {
+.encryption-output {
     display: flex;
     flex-direction: column;
 }
 
-#output_textarea {
+#output-textarea {
     resize: none;
     outline: none;
     border: none;
@@ -118,7 +134,7 @@ main {
     font-family: "Roboto", sans-serif;
     font-size: 2rem;
     color: #495057;
-    width: 34rem;
+    width: 40rem;
     height: 44rem;
     background-image: url('img/textNotFound.png');
     background-size: contain;
@@ -156,19 +172,19 @@ main {
 
 }
 
-.shake {
+.shake{
     animation: shake 0.4s ease-in-out;
 }
 
 
-#output_button {
+#output-button {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
 
 }
 
-#copy_button {
+#copy-button {
     background-color: #356EA9;
     color: white;
     border: none;
@@ -185,7 +201,7 @@ main {
 
 }
 
-#copy_button:hover {
+#copy-button:hover {
     background-color: #0A3871;
     transform: scale(1.1);
 
@@ -207,13 +223,13 @@ footer {
 
 
 
-@media (min-width:1440px){
+@media (max-width:1920px){
 
     main {
         height: 75vh;
     }
 
-    #output_textarea {
+    #output-textarea {
         width: 24rem;
         height: 32rem;
         margin-top: 1.4rem;
