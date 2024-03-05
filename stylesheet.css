@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: linear-gradient(to bottom, #0A3871, #356EA9);
+    background-image: linear-gradient(to bottom,#0A3871,#356EA9);
     color: white;
     padding: 2rem;
     width: 100%;
@@ -70,10 +70,9 @@ main {
 }
 
 .container-buttons button {
-    background-color: #356EA9;
     color: white;
-    border: none;
     border-radius: 24px;
+    border: none;
     cursor: pointer;
     transition: background-color 0.4s ease;
     width: 200px;
@@ -83,21 +82,32 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
+    
 }
 
-.container-buttons #desencriptar{
-    background-color: #ADB5BD;
+#encrypt-button{
+background-color: #609ED4;
+border: 2px solid #868E96;
 }
 
-.container-buttons #desencriptar:hover{
-    background-color: #495057;
+#decrypt-button{
+background-color: #868E96;
+border: 2px solid #609ED4;
+
 }
 
-
-.container-buttons button:hover {
-    background-color: #0A3871;
+#encrypt-button:hover{
+    background-color: #356EA9;
     transform: scale(1.1);
 }
+    
+#decrypt-button:hover{
+    background-color: #495057; 
+    transform: scale(1.1);
+}
+    
+    
+
 
 .information-messages{
     display: flex;
@@ -185,7 +195,7 @@ main {
 }
 
 #copy-button {
-    background-color: #356EA9;
+    background-color:#AAB2D5;
     color: white;
     border: none;
     border-radius: 24px;
@@ -202,7 +212,7 @@ main {
 }
 
 #copy-button:hover {
-    background-color: #0A3871;
+    background-color: #757FB2;
     transform: scale(1.1);
 
 }
@@ -212,8 +222,8 @@ footer {
     bottom: 0;
     font-family: "Press Start 2P", system-ui;
     font-size: 0.2 rem;
-    background-image: linear-gradient(to bottom, #356EA9, #0A3871);
-    color: white;
+    background-image: linear-gradient(to bottom,#609ED4,#356EA9);
+     color: white;
     padding: 2rem 0;
     width: 100%;
     text-align: center;
