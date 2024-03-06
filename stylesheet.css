@@ -203,15 +203,15 @@ main {
     animation: shake 0.4s ease-in-out;
 }
 #successful-copy-message{
-    color: #35a967;
+    color: #008a1c;
     font-family: "Press Start 2P", system-ui;
-    font-size: 15px;
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 #output-button {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
 

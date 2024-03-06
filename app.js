@@ -95,10 +95,10 @@ function copy() {
     message.textContent = '¡El texto se ha copiado con éxito!';
     message.style.display = 'block';
 
-    // Ocultar el mensaje después de unos segundos (opcional)
+    // Hide the message after a few seconds
     setTimeout(function() {
         message.style.display = 'none';
-    }, 3000); // 3000 milisegundos = 3 segundos
+    }, 3000); // 3000 milliseconds equals 3 seconds.
 }
 
 
