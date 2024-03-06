@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('input-textarea').addEventListener('input', function () {
         let inputText = this.value;
         let regex = /^[a-z\s]*$/; // Expresión regular para letras minúsculas y espacios en blanco
+        let encryptButton = document.getElementById('encrypt');
+        let decryptButton = document.getElementById('decrypt');
         
         if (!regex.test(inputText)) {
             
@@ -38,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('encrypt-button').setAttribute('disabled', 'true');
             document.getElementById('decrypt-button').setAttribute('disabled', 'true');
             // Elimina la clase de animación en los botones deshabilitados
-            classList.remove('container-buttons button:hover');
-            classList.remove('container-buttons button:hover');
-
+            encryptButton.classList.add('disable-buttons-enabled');
+            decryptButton.classList.add('disable-buttons-enabled');
+            
         } else {
             errorMessage.style.display = 'none';
             document.getElementById('encrypt-button').removeAttribute('disabled');

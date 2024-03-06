@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: linear-gradient(to bottom,#0A3871,#356EA9);
+    background-image: linear-gradient(to bottom, #0A3871, #356EA9);
     color: white;
     padding: 2rem;
     width: 100%;
@@ -23,7 +23,7 @@ header {
 }
 
 #logo {
-    margin-left: 35rem;
+    margin-left: 34rem;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
@@ -57,7 +57,7 @@ main {
     font-family: "Roboto", sans-serif;
 }
 
-#input-textarea::placeholder{
+#input-textarea::placeholder {
     color: #0A3871;
     font-family: "Roboto", sans-serif;
 }
@@ -69,7 +69,7 @@ main {
     gap: 4rem;
 }
 
-.container-buttons button {
+.container-buttons button{
     color: white;
     border-radius: 24px;
     border: none;
@@ -82,34 +82,49 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
-    
-}
-
-#encrypt-button{
-background-color: #609ED4;
-border: 2px solid #868E96;
-}
-
-#decrypt-button{
-background-color: #868E96;
-border: 2px solid #609ED4;
 
 }
 
-#encrypt-button:hover{
+#encrypt-button {
+    background-color: #609ED4;
+    border: 2px solid #868E96;
+}
+#encrypt-button:hover {
     background-color: #356EA9;
     transform: scale(1.1);
 }
-    
-#decrypt-button:hover{
-    background-color: #495057; 
+
+#decrypt-button {
+    background-color: #868E96;
+    border: 2px solid #609ED4;
+}
+#decrypt-button:hover {
+    background-color: #495057;
     transform: scale(1.1);
 }
-    
-    
 
+/* disable styles buttons */
+#encrypt-button[disabled] {
+    background-color: #787878;
+    cursor: not-allowed;
+}
 
-.information-messages{
+#encrypt-button:hover[disabled] {
+    background-color: #787878;
+    transform: none;
+}
+
+#decrypt-button[disabled] {
+    background-color: #787878;
+    cursor: not-allowed;
+}
+
+#decrypt-button:hover[disabled] {
+    background-color: #787878;
+    transform: none;
+}
+/* ************************ */
+.information-messages {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,7 +141,7 @@ border: 2px solid #609ED4;
     align-items: center;
 }
 
-#error-message{
+#error-message {
     color: red;
     display: none;
 }
@@ -182,7 +197,7 @@ border: 2px solid #609ED4;
 
 }
 
-.shake{
+.shake {
     animation: shake 0.4s ease-in-out;
 }
 
@@ -195,9 +210,9 @@ border: 2px solid #609ED4;
 }
 
 #copy-button {
-    background-color:#AAB2D5;
-    color: white;
-    border: none;
+    background-color: #356EA9;
+    color: #ffffff;
+    border: 2px solid #609ED4;
     border-radius: 24px;
     cursor: pointer;
     transition: background-color 0.4s ease;
@@ -208,13 +223,11 @@ border: 2px solid #609ED4;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
-
 }
 
 #copy-button:hover {
-    background-color: #757FB2;
+    background-color: #0A3871;
     transform: scale(1.1);
-
 }
 
 footer {
@@ -222,8 +235,8 @@ footer {
     bottom: 0;
     font-family: "Press Start 2P", system-ui;
     font-size: 0.2 rem;
-    background-image: linear-gradient(to bottom,#609ED4,#356EA9);
-     color: white;
+    background-image: linear-gradient(to bottom, #356EA9, #0A3871);
+    color: white;
     padding: 2rem 0;
     width: 100%;
     text-align: center;
@@ -233,7 +246,7 @@ footer {
 
 
 
-@media (max-width:1920px){
+@media (max-width:1920px) {
 
     main {
         height: 75vh;
