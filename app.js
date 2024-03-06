@@ -33,16 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
         let regex = /^[a-z\s]*$/; // Expresión regular para letras minúsculas y espacios en blanco
         let encryptButton = document.getElementById('encrypt');
         let decryptButton = document.getElementById('decrypt');
-        
+
         if (!regex.test(inputText)) {
-            
+
             errorMessage.style.display = 'inline-flex';
             document.getElementById('encrypt-button').setAttribute('disabled', 'true');
             document.getElementById('decrypt-button').setAttribute('disabled', 'true');
             // Elimina la clase de animación en los botones deshabilitados
             encryptButton.classList.add('disable-buttons-enabled');
             decryptButton.classList.add('disable-buttons-enabled');
-            
+
         } else {
             errorMessage.style.display = 'none';
             document.getElementById('encrypt-button').removeAttribute('disabled');
@@ -83,6 +83,28 @@ function decryptText() {
 
     document.getElementById('output-textarea').addEventListener('input', hiddenBackgroundImage());
 }
+
+function copy() {
+    
+    let textarea = document.getElementById('output-textarea');
+    textarea.select();
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+
+    let message = document.getElementById('successful-copy-message');
+    message.textContent = '¡El texto se ha copiado con éxito!';
+    message.style.display = 'block';
+
+    // Ocultar el mensaje después de unos segundos (opcional)
+    setTimeout(function() {
+        message.style.display = 'none';
+    }, 3000); // 3000 milisegundos = 3 segundos
+}
+
+
+
+
+
 
 
 

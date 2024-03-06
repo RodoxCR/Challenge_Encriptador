@@ -25,27 +25,36 @@
 
         <div class="encryption-input">
 
-            <textarea name="input" id="input-textarea" placeholder="Ingresa el texto que quieres encriptar o desencriptar"></textarea>
-            
+            <textarea name="input" id="input-textarea"
+                placeholder="Ingresa el texto que quieres encriptar o desencriptar"></textarea>
+
             <div class="information-messages">
-                <span id="error-message"><img src="img/warning.png" alt="signo de error">Mensaje no válido para encriptar o desencriptar</span>
-                <span id="info-message"><img src="img/exclamation_circle_icon.ico" alt="signo de exclamación">Agrega solo letras minusculas, sin caracteres especiales y sin acento</span>
+                <span id="error-message"><img src="img/warning.png" alt="signo de error">Mensaje no válido para
+                    encriptar o desencriptar</span>
+                <span id="info-message"><img src="img/exclamation_circle_icon.ico" alt="signo de exclamación">Agrega
+                    solo letras minusculas, sin caracteres especiales y sin acento</span>
             </div>
-            
+
             <div class="container-buttons">
-                <button onclick="encryptText()"  id="encrypt-button">Encriptar</button>
-                <button onclick="decryptText()"  id="decrypt-button">Desencriptar</button>
+                <button onclick="encryptText()" id="encrypt-button">Encriptar</button>
+                <button onclick="decryptText()" id="decrypt-button">Desencriptar</button>
             </div>
         </div>
 
 
         <div class="encryption-output">
+            <div id="successful-copy-message" style="display: none;"></div>
 
-            <textarea name="output" id="output-textarea"click placeholder="No se encontró ningún mensaje encriptado o desencriptado"></textarea>
+
+            <textarea name="output" id="output-textarea" click
+                placeholder="No se encontró ningún mensaje encriptado o desencriptado">
+            </textarea>
+
+
 
             <div id="output-button">
 
-                <button onclick="" id="copy-button">Copiar</button>
+                <button onclick="copy()" id="copy-button">Copiar</button>
 
             </div>
 

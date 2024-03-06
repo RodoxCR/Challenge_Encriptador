@@ -105,6 +105,7 @@ main {
 
 /* disable styles buttons */
 #encrypt-button[disabled] {
+    border: none;
     background-color: #787878;
     cursor: not-allowed;
 }
@@ -115,6 +116,7 @@ main {
 }
 
 #decrypt-button[disabled] {
+    border: none;
     background-color: #787878;
     cursor: not-allowed;
 }
@@ -200,7 +202,13 @@ main {
 .shake {
     animation: shake 0.4s ease-in-out;
 }
-
+#successful-copy-message{
+    color: #35a967;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
 #output-button {
     margin-top: 2rem;
