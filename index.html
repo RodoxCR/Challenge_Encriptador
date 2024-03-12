@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+
 
 </head>
 
@@ -23,16 +25,20 @@
     </header>
     <main>
 
-        <div class="encryption-input">
+        <div class="input-box">
 
             <textarea name="input" id="input-textarea"
                 placeholder="Ingresa el texto que quieres encriptar o desencriptar"></textarea>
 
             <div class="information-messages">
-                <span id="error-message"><img src="img/warning.png" alt="signo de error">Mensaje no válido para
-                    encriptar o desencriptar</span>
-                <span id="info-message"><img src="img/exclamation_circle_icon.ico" alt="signo de exclamación">Agrega
-                    solo letras minusculas, sin caracteres especiales y sin acento</span>
+                <div id="error-message"><img id="warning-icon" src="img/warning.png" alt="signo de error">Mensaje no
+                    válido para
+                    encriptar o desencriptar
+                </div>
+                <div id="info-message">
+                    <img id="exclamation-icon" src="img/exclamation_circle_icon.ico" alt="Icono exclamación">
+                    <p>Ingresa solo letras minusculas, <br>sin caracteres especiales y sin acento</p>
+                </div>
             </div>
 
             <div class="container-buttons">
@@ -42,18 +48,15 @@
         </div>
 
 
-        <div class="encryption-output">
+        <div class="output-box">
+
+            <textarea name="output" readonly="readonly" id="output-textarea"
+                placeholder="Ningún mensaje encriptado o desencriptado"></textarea>
 
             <div id="successful-copy-message" style="display: none;"></div>
 
-            <textarea name="output" id="output-textarea" click
-                placeholder="No se encontró ningún mensaje encriptado o desencriptado">
-            </textarea>
-
             <div id="output-button">
-
                 <button onclick="copy()" id="copy-button">Copiar</button>
-
             </div>
 
         </div>

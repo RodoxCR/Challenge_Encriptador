@@ -39,9 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
             errorMessage.style.display = 'inline-flex';
             document.getElementById('encrypt-button').setAttribute('disabled', 'true');
             document.getElementById('decrypt-button').setAttribute('disabled', 'true');
-            // Elimina la clase de animación en los botones deshabilitados
-            encryptButton.classList.add('disable-buttons-enabled');
-            decryptButton.classList.add('disable-buttons-enabled');
+            
 
         } else {
             errorMessage.style.display = 'none';
