@@ -1,8 +1,8 @@
 @media only screen and (min-width: 500px) and (max-width:600px) {
 
     #input-textarea {
-        width: 28rem;
-        height: 14rem;
+        width: 24rem;
+        height: 6rem;
     }
 
     .information-messages {
@@ -11,8 +11,8 @@
     }
 
     #output-textarea {
-        width: 28rem;
-        height: 10rem;
+        width: 24rem;
+        height: 6rem;
     }
 
 }
@@ -35,7 +35,7 @@
 
     #input-textarea {
         width: 32rem;
-        height: 24rem;
+        height: 8rem;
         font-size: 2rem;
     }
 
@@ -61,7 +61,7 @@
 
     #output-textarea {
         width: 32rem;
-        height: 12rem;
+        height: 8rem;
         font-size: 2rem;
     }
 
@@ -88,7 +88,7 @@
 
     #input-textarea {
         width: 40rem;
-        height: 24rem;
+        height: 8rem;
         font-size: 2.4rem;
     }
 
@@ -151,7 +151,7 @@
 
     #input-textarea {
         width: 24rem;
-        height: 34rem;
+        height: 20rem;
         font-size: 2.4rem;
         margin-top: 4.0rem;
     }
@@ -223,10 +223,10 @@
     #output-textarea {
 
         width: 24rem;
-        height: 34rem;
+        height: 20rem;
         font-size: 2.4rem;
         background-image: url('img/textNotFound.png');
-        background-size: contain;
+        background-size: 200px;
         background-position: bottom;
         background-repeat: no-repeat;
 
@@ -264,6 +264,7 @@
 
     #copy-button {
         margin-top: 0.6rem;
+        margin-bottom: 1.6rem;
     }
 
     #copy-button:hover {
@@ -286,7 +287,7 @@
     #logo {
         height: 60px;
         width: 60px;
-        padding-left: 8rem;
+        padding-left: 10rem;
     }
 
     #title {
@@ -304,7 +305,7 @@
     }
 
     #input-textarea {
-        width: 44rem;
+        width: 30rem;
         height: 24rem;
         font-size: 2.4rem;
         margin-top: 3.6rem;
@@ -375,13 +376,13 @@
 
 
     #output-textarea {
-
-        width: 40rem;
+       
+        width: 30rem;
         height: 24rem;
         margin-bottom: 2rem;
         font-size: 2.4rem;
         background-image: url('img/textNotFound.png');
-        background-size: 400px;
+        background-size: 200px;
         background-position: bottom;
         background-repeat: no-repeat;
 
@@ -586,8 +587,3 @@
     }
 
 }
-
-
-
-
-
