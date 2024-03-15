@@ -277,3 +277,316 @@
     }
 
 }
+
+@media only screen and (min-width: 1201px) and (max-width:1920px) {
+    header {
+        justify-content: start;
+    }
+
+    #logo {
+        height: 60px;
+        width: 60px;
+        padding-left: 8rem;
+    }
+
+    #title {
+        color: white;
+        font-family: "Press Start 2P", system-ui;
+        font-size: 1.8rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+
+    }
+
+    #input-textarea {
+        width: 34rem;
+        height: 34rem;
+        font-size: 2.4rem;
+        margin-top: 5.5rem;
+    }
+
+    #input-textarea::placeholder {
+        font-size: 2.4rem;
+    }
+
+    .information-messages {
+        margin: 1rem;
+    }
+
+    .container-buttons {
+        flex-direction: row;
+        padding: 0.4rem;
+    }
+
+    .container-buttons button {
+        flex-direction: row;
+        margin-top: 0;
+        width: 180px;
+        font-size: 0.8rem;
+    }
+
+    #encrypt-button {
+        background-color: #609ED4;
+        border: 2px solid #868E96;
+    }
+
+    #encrypt-button:hover {
+        background-color: #356EA9;
+        transform: scale(1.1);
+    }
+
+    #decrypt-button {
+        background-color: #868E96;
+        border: 2px solid #609ED4;
+    }
+
+    #decrypt-button:hover {
+        background-color: #495057;
+        transform: scale(1.1);
+    }
+
+    /* disable styles buttons */
+    #encrypt-button[disabled] {
+        border: none;
+        background-color: #787878;
+        cursor: not-allowed;
+    }
+
+    #encrypt-button:hover[disabled] {
+        background-color: #787878;
+        transform: none;
+    }
+
+    #decrypt-button[disabled] {
+        border: none;
+        background-color: #787878;
+        cursor: not-allowed;
+    }
+
+    #decrypt-button:hover[disabled] {
+        background-color: #787878;
+        transform: none;
+    }
+
+
+    #output-textarea {
+
+        width: 34rem;
+        height: 34rem;
+        font-size: 2.4rem;
+        background-image: url('img/textNotFound.png');
+        background-size: 500px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-5px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+
+        75% {
+            transform: translateX(-3px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .shake {
+        animation: shake 0.4s ease-in-out;
+    }
+
+    #output-textarea::placeholder {
+        font-size: 2.4rem;
+    }
+
+    #copy-button {
+        margin-top: 0.6rem;
+    }
+
+    #copy-button:hover {
+        background-color: #0A3871;
+        transform: scale(1.1);
+    }
+
+
+    footer {
+        width: 100vw;
+    }
+
+}
+
+@media only screen and (min-width: 1921px) {
+    header {
+        justify-content: start;
+    }
+
+    #logo {
+        height: 60px;
+        width: 60px;
+        padding-left: 28rem;
+    }
+
+    #title {
+        color: white;
+        font-family: "Press Start 2P", system-ui;
+        font-size: 1.8rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8rem;
+
+    }
+
+    #input-textarea {
+        width: 34rem;
+        height: 34rem;
+        font-size: 2.4rem;
+        margin-top: 5.5rem;
+    }
+
+    #input-textarea::placeholder {
+        font-size: 2.4rem;
+    }
+
+    .information-messages {
+        margin: 1rem;
+    }
+
+    .container-buttons {
+        flex-direction: row;
+        padding: 0.4rem;
+    }
+
+    .container-buttons button {
+        flex-direction: row;
+        margin-top: 0;
+        width: 180px;
+        font-size: 0.8rem;
+    }
+
+    #encrypt-button {
+        background-color: #609ED4;
+        border: 2px solid #868E96;
+    }
+
+    #encrypt-button:hover {
+        background-color: #356EA9;
+        transform: scale(1.1);
+    }
+
+    #decrypt-button {
+        background-color: #868E96;
+        border: 2px solid #609ED4;
+    }
+
+    #decrypt-button:hover {
+        background-color: #495057;
+        transform: scale(1.1);
+    }
+
+    /* disable styles buttons */
+    #encrypt-button[disabled] {
+        border: none;
+        background-color: #787878;
+        cursor: not-allowed;
+    }
+
+    #encrypt-button:hover[disabled] {
+        background-color: #787878;
+        transform: none;
+    }
+
+    #decrypt-button[disabled] {
+        border: none;
+        background-color: #787878;
+        cursor: not-allowed;
+    }
+
+    #decrypt-button:hover[disabled] {
+        background-color: #787878;
+        transform: none;
+    }
+
+
+    #output-textarea {
+
+        width: 34rem;
+        height: 34rem;
+        font-size: 2.4rem;
+        background-image: url('img/textNotFound.png');
+        background-size: 500px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-5px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+
+        75% {
+            transform: translateX(-3px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .shake {
+        animation: shake 0.4s ease-in-out;
+    }
+
+    #output-textarea::placeholder {
+        font-size: 2.4rem;
+    }
+
+    #copy-button {
+        margin-top: 0.6rem;
+    }
+
+    #copy-button:hover {
+        background-color: #0A3871;
+        transform: scale(1.1);
+    }
+
+
+    footer {
+        width: 100vw;
+    }
+
+}
+
+
+
+
+

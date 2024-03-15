@@ -29,7 +29,7 @@ header {
     text-justify: center;
 }
 
-main {
+main{
 
     display: flex;
     flex-direction: column;
