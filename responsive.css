@@ -146,13 +146,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 4rem;
-<<<<<<< HEAD
         height: auto;
-=======
-        height: 51vh;
-
->>>>>>> 163fdd0a7b2d4215f88dc4a626b17417554a94f4
-
     }
 
     #input-textarea {
@@ -464,11 +458,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 8rem;
-<<<<<<< HEAD
         height: auto;
-=======
-        height: 74vh;
->>>>>>> 163fdd0a7b2d4215f88dc4a626b17417554a94f4
     }
 
     #input-textarea {
