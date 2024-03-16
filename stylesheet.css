@@ -1,7 +1,6 @@
 body {
     background-color: #e4e6eb;
-    min-height: 50vh;
-
+    scroll-behavior: auto;
 }
 
 header {
