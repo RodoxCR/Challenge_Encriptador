@@ -1,7 +1,11 @@
 body {
     background-color: #e4e6eb;
     scroll-behavior: smooth;
+<<<<<<< HEAD
 
+=======
+    height:max-content;
+>>>>>>> 163fdd0a7b2d4215f88dc4a626b17417554a94f4
 }
 
 header {
@@ -57,7 +61,10 @@ main {
     outline: none;
     color: #0A3871;
     font-family: "Roboto", sans-serif;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 163fdd0a7b2d4215f88dc4a626b17417554a94f4
 }
 
 #input-textarea::placeholder {
@@ -218,7 +225,6 @@ footer {
     text-align: center;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: fixed;
     bottom: 0;
-
+    position: fixed;
 }
