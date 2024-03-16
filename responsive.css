@@ -146,6 +146,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 4rem;
+        height: auto;
 
     }
 
@@ -301,6 +302,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 4rem;
+        height: auto;
 
     }
 
@@ -376,7 +378,7 @@
 
 
     #output-textarea {
-       
+
         width: 30rem;
         height: 24rem;
         margin-bottom: 2rem;
@@ -456,7 +458,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 8rem;
-
+        height: auto;
     }
 
     #input-textarea {
@@ -464,6 +466,7 @@
         height: 34rem;
         font-size: 2.4rem;
         margin-top: 5.5rem;
+
     }
 
     #input-textarea::placeholder {
